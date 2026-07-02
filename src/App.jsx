@@ -29,6 +29,7 @@ import teamWelfareDirector from "./assets/team-welfare-director.jpg";
 import teamPro from "./assets/team-pro.jpg";
 import teamVp1 from "./assets/team-vp1.jpg";
 import FeedbackForm from "./components/FeedbackForm";
+import FeedbackList from "./components/FeedbackList";
 import { C, serif, mono, sans, cardBase } from "./theme";
 
 /* ---------------------------------------------------------
@@ -852,6 +853,10 @@ export default function App() {
                 Share your name, email, and a comment — the New Dawn team
                 reads every submission.
               </p>
+            </Reveal>
+
+            <Reveal>
+              <FeedbackList />
             </Reveal>
 
             <Reveal>
