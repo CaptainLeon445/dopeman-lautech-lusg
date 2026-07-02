@@ -7,7 +7,6 @@ import {
   ShieldCheck,
   Briefcase,
   PartyPopper,
-  Quote,
   Mail,
   Instagram,
   Twitter,
@@ -29,6 +28,8 @@ import teamSportDirector from "./assets/team-sport-director.jpg";
 import teamWelfareDirector from "./assets/team-welfare-director.jpg";
 import teamPro from "./assets/team-pro.jpg";
 import teamVp1 from "./assets/team-vp1.jpg";
+import FeedbackForm from "./components/FeedbackForm";
+import { C, serif, mono, sans, cardBase } from "./theme";
 
 /* ---------------------------------------------------------
    NEW DAWN — Campaign site for Famakin Mubaraq Olanrewaju
@@ -38,26 +39,6 @@ import teamVp1 from "./assets/team-vp1.jpg";
    are applied as inline styles; Tailwind classes are used only
    for layout (flex/grid/gap/padding/etc).
 --------------------------------------------------------- */
-
-const C = {
-  ink: "#0B1120",
-  panel: "#1B2B45",
-  panelAlt: "#111A2E",
-  panelSoft: "#10182B",
-  gold: "#F2A93B",
-  goldHover: "#f6bb61",
-  goldInk: "#231404",
-  coral: "#E85D4C",
-  text: "#EDEFF5",
-  textDim: "#C7CEDD",
-  textFaint: "#8FA3C7",
-  line: "rgba(255,255,255,0.10)",
-  lineSoft: "rgba(255,255,255,0.06)",
-};
-
-const serif = "'Fraunces', Georgia, serif";
-const mono = "'IBM Plex Mono', ui-monospace, monospace";
-const sans = "'Manrope', system-ui, sans-serif";
 
 const NAV_OFFSET = 88; // px — clears the sticky header when jumping to a section
 
@@ -195,27 +176,6 @@ const PROMISES = [
   "Bring back a proper sports and cultural calendar for all departments.",
 ];
 
-const FEEDBACK = [
-  {
-    name: "Add a real quote",
-    role: "e.g. 300L, College of Agricultural Sciences",
-    body:
-      "Replace this card with an actual quote from a student who has heard the agenda — keep it short and specific.",
-  },
-  {
-    name: "Add a real quote",
-    role: "e.g. Course Rep, College of Management Sciences",
-    body:
-      "Swap in feedback from a course rep, hall exec, or lecturer who can speak to the plan — real names build trust.",
-  },
-  {
-    name: "Add a real quote",
-    role: "e.g. Final year, Environmental Sciences",
-    body:
-      "A short line about why they're voting New Dawn works better here than a long paragraph.",
-  },
-];
-
 /* ---------- small scroll-reveal helper ---------- */
 function Reveal({ children, className = "", delay = 0, style = {} }) {
   const ref = useRef(null);
@@ -255,12 +215,6 @@ function Reveal({ children, className = "", delay = 0, style = {} }) {
     </div>
   );
 }
-
-const cardBase = {
-  border: `1px solid ${C.line}`,
-  background: "rgba(255,255,255,0.03)",
-  borderRadius: "16px",
-};
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -887,40 +841,22 @@ export default function App() {
         {/* ================= FEEDBACK ================= */}
         <section id="feedback" className="px-6 py-20 md:py-24" style={{ scrollMarginTop: `${NAV_OFFSET}px`, borderTop: `1px solid ${C.lineSoft}` }}>
           <div className="max-w-6xl mx-auto">
-            <Reveal className="max-w-2xl mb-12">
+            <Reveal className="max-w-2xl mb-12 mx-auto text-center">
               <span className="uppercase text-xs" style={{ color: C.gold, fontFamily: mono, letterSpacing: "0.2em" }}>
                 Feedback &amp; comments
               </span>
               <h2 className="text-3xl md:text-4xl mt-4 mb-4" style={{ fontFamily: serif, fontWeight: 600 }}>
-                What the campus is saying.
+                Tell the campaign what you think.
               </h2>
               <p className="leading-relaxed" style={{ color: C.textDim }}>
-                These cards are placeholders — swap them for real quotes from
-                students, course reps, or hall execs before publishing.
+                Share your name, email, and a comment — the New Dawn team
+                reads every submission.
               </p>
             </Reveal>
 
-            <div className="grid md:grid-cols-3 gap-5">
-              {FEEDBACK.map((f, i) => (
-                <Reveal key={i} delay={i * 90}>
-                  <div
-                    className="h-full p-6"
-                    style={{
-                      border: `1px dashed rgba(255,255,255,0.2)`,
-                      borderRadius: "16px",
-                      background: "rgba(255,255,255,0.02)",
-                    }}
-                  >
-                    <Quote size={20} style={{ color: C.gold, marginBottom: "1rem" }} />
-                    <p className="text-sm leading-relaxed italic mb-5" style={{ color: C.textDim }}>
-                      {f.body}
-                    </p>
-                    <p className="text-sm font-semibold" style={{ color: C.text }}>{f.name}</p>
-                    <p className="text-xs" style={{ color: C.textFaint, fontFamily: mono }}>{f.role}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
+            <Reveal>
+              <FeedbackForm />
+            </Reveal>
           </div>
         </section>
 
@@ -953,7 +889,7 @@ export default function App() {
                   <Mail size={16} /> Email the campaign
                 </a>
                 <a
-                  href="#"
+                  href="#feedback"
                   className="inline-flex items-center gap-2 rounded-full font-semibold px-6 py-3.5"
                   style={{ border: `1px solid rgba(255,255,255,0.2)`, color: C.text }}
                 >
