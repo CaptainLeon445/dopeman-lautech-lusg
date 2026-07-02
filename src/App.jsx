@@ -924,7 +924,7 @@ export default function App() {
           </div>
         </div>
         <p className="max-w-6xl mx-auto text-xs mt-8" style={{ color: "#5C6B8A" }}>
-          Paid for by the New Dawn campaign — #NewDawn #LautechisDope
+          Courtesy: Faculty of Engineering Movement — #NewDawn #LautechisDope
           #LSUGElection2026. Update social links and email above before
           publishing.
         </p>
