@@ -24,7 +24,6 @@ export default function Carousel({ items, aspect = "4 / 3", autoPlayMs = 4000 })
   const [index, setIndex] = useState(0);
   const [dragOffset, setDragOffset] = useState(0);
   const [dragging, setDragging] = useState(false);
-  const [paused, setPaused] = useState(false);
   const startX = useRef(0);
   const containerRef = useRef(null);
 
@@ -33,16 +32,16 @@ export default function Carousel({ items, aspect = "4 / 3", autoPlayMs = 4000 })
   const prev = useCallback(() => goTo(index - 1), [index, goTo]);
 
   useEffect(() => {
-    if (paused || dragging || count <= 1) return;
+    if (dragging || count <= 1) return;
     const timer = setInterval(() => setIndex((i) => (i + 1) % count), autoPlayMs);
     return () => clearInterval(timer);
-  }, [paused, dragging, count, autoPlayMs]);
+  }, [dragging, count, autoPlayMs]);
 
   if (count === 0) return null;
 
   const onPointerDown = (e) => {
+    if (e.target.closest("button")) return;
     setDragging(true);
-    setPaused(true);
     startX.current = e.clientX;
     containerRef.current?.setPointerCapture?.(e.pointerId);
   };
@@ -58,7 +57,6 @@ export default function Carousel({ items, aspect = "4 / 3", autoPlayMs = 4000 })
     else if (dragOffset < -threshold) next();
     setDragging(false);
     setDragOffset(0);
-    setTimeout(() => setPaused(false), 1500);
   };
   const onKeyDown = (e) => {
     if (e.key === "ArrowLeft") prev();
@@ -78,8 +76,6 @@ export default function Carousel({ items, aspect = "4 / 3", autoPlayMs = 4000 })
       onPointerUp={endDrag}
       onPointerCancel={endDrag}
       onPointerLeave={() => dragging && endDrag()}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => !dragging && setPaused(false)}
       onKeyDown={onKeyDown}
     >
       <p className="sr-only" aria-live="polite">

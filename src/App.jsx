@@ -357,15 +357,26 @@ export default function App() {
             ))}
           </nav>
 
-          <a
-            href="#join"
-            className="hidden md:inline-flex items-center gap-2 rounded-full font-semibold text-sm px-5 py-2.5 transition-colors"
-            style={{ background: C.gold, color: C.goldInk }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = C.goldHover)}
-            onMouseLeave={(e) => (e.currentTarget.style.background = C.gold)}
-          >
-            Join the campaign <ArrowRight size={15} />
-          </a>
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href={WHATSAPP_CHANNEL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full font-semibold text-sm px-5 py-2.5 transition-colors"
+              style={{ background: C.coral, color: C.text }}
+            >
+              <Gift size={15} /> Win giveaways
+            </a>
+            <a
+              href="#join"
+              className="inline-flex items-center gap-2 rounded-full font-semibold text-sm px-5 py-2.5 transition-colors"
+              style={{ background: C.gold, color: C.goldInk }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = C.goldHover)}
+              onMouseLeave={(e) => (e.currentTarget.style.background = C.gold)}
+            >
+              Join the campaign <ArrowRight size={15} />
+            </a>
+          </div>
 
           <button
             onClick={() => setMenuOpen((v) => !v)}
@@ -387,6 +398,16 @@ export default function App() {
                 {l.label}
               </a>
             ))}
+            <a
+              href={WHATSAPP_CHANNEL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="inline-flex w-fit items-center gap-2 rounded-full font-semibold px-5 py-2.5"
+              style={{ background: C.coral, color: C.text }}
+            >
+              <Gift size={15} /> Win giveaways
+            </a>
             <a
               href="#join"
               onClick={() => setMenuOpen(false)}
