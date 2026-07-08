@@ -8,8 +8,6 @@ import {
   Briefcase,
   PartyPopper,
   Mail,
-  Instagram,
-  Twitter,
   MessageCircle,
   ArrowRight,
   Menu,
@@ -996,7 +994,7 @@ export default function App() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a
-                  href="mailto:newdawn26@example.com"
+                  href="mailto:famakinmubarak@gmail.com"
                   className="inline-flex items-center gap-2 rounded-full font-semibold px-6 py-3.5 transition-colors"
                   style={{ background: C.gold, color: C.goldInk }}
                   onMouseEnter={(e) => (e.currentTarget.style.background = C.goldHover)}
@@ -1028,16 +1026,12 @@ export default function App() {
             </p>
           </div>
           <div className="flex items-center gap-4" style={{ color: C.textDim }}>
-            <a href="#" aria-label="Instagram" style={{ color: "inherit" }}><Instagram size={18} /></a>
-            <a href="#" aria-label="Twitter / X" style={{ color: "inherit" }}><Twitter size={18} /></a>
-            <a href="#" aria-label="WhatsApp" style={{ color: "inherit" }}><MessageCircle size={18} /></a>
-            <a href="mailto:newdawn26@example.com" aria-label="Email" style={{ color: "inherit" }}><Mail size={18} /></a>
+            <a href="mailto:famakinmubarak@gmail.com" aria-label="Email" style={{ color: "inherit" }}><Mail size={18} /></a>
           </div>
         </div>
         <p className="max-w-6xl mx-auto text-xs mt-8" style={{ color: "#5C6B8A" }}>
           Courtesy: Faculty of Engineering Movement — #NewDawn #LautechisDope
-          #LSUGElection2026. Update social links and email above before
-          publishing.
+          #LSUGElection2026
         </p>
       </footer>
     </div>
