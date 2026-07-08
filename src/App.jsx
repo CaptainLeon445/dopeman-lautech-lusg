@@ -17,6 +17,9 @@ import {
   Sunrise,
   GraduationCap,
   MapPin,
+  Users,
+  Trophy,
+  Flag,
 } from "lucide-react";
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
@@ -28,6 +31,16 @@ import teamSportDirector from "./assets/team-sport-director.jpg";
 import teamWelfareDirector from "./assets/team-welfare-director.jpg";
 import teamPro from "./assets/team-pro.jpg";
 import teamVp1 from "./assets/team-vp1.jpg";
+import teamVp2 from "./assets/team-vp2.jpg";
+import teamSocialDirector from "./assets/team-social-director.jpg";
+import gallery01 from "./assets/gallery/gallery-01.jpg";
+import gallery02 from "./assets/gallery/gallery-02.jpg";
+import gallery03 from "./assets/gallery/gallery-03.jpg";
+import gallery04 from "./assets/gallery/gallery-04.jpg";
+import gallery05 from "./assets/gallery/gallery-05.jpg";
+import gallery06 from "./assets/gallery/gallery-06.jpg";
+import gallery07 from "./assets/gallery/gallery-07.jpg";
+import gallery08 from "./assets/gallery/gallery-08.jpg";
 import FeedbackForm from "./components/FeedbackForm";
 import FeedbackList from "./components/FeedbackList";
 import { C, serif, mono, sans, cardBase } from "./theme";
@@ -137,6 +150,45 @@ const TEAM = [
     name: "Lawalson Ayomide",
     pka: "Smiling",
     photo: teamVp1,
+  },
+  {
+    role: "Vice President 2",
+    name: "Ajibola Sobur Opeyemi",
+    photo: teamVp2,
+  },
+  {
+    role: "Social Director",
+    name: "Semiu Faruq Adeyemi",
+    pka: "Ace",
+    photo: teamSocialDirector,
+  },
+];
+
+const GALLERY = [
+  { photo: gallery01, alt: "Team LAUTECH holding the university banner at the NUGA games" },
+  { photo: gallery02, alt: "Team LAUTECH athletes in yellow jerseys with the university banner" },
+  { photo: gallery03, alt: "Team LAUTECH contingent gathered at the games venue" },
+  { photo: gallery04, alt: "Team LAUTECH athletes in yellow jerseys on the track" },
+  { photo: gallery05, alt: "Relay team with coach on the track at the NUGA games" },
+  { photo: gallery06, alt: "Team LAUTECH contingent with the university banner and sign" },
+  { photo: gallery07, alt: "Team LAUTECH athletes at the games stadium" },
+  { photo: gallery08, alt: "Team LAUTECH contingent posing at the stadium stands" },
+];
+
+const ACHIEVEMENTS = [
+  {
+    icon: Users,
+    body: "Led the FET28 class as Faculty Representative.",
+  },
+  {
+    icon: Trophy,
+    body:
+      "Won medals and a trophy for the Department of Mechanical Engineering at the LAUTECH Olympics.",
+  },
+  {
+    icon: Flag,
+    body:
+      "Represented LAUTECH at the national level at the 27th edition of the Nigeria University Games (NUGA), held at the University of Jos.",
   },
 ];
 
@@ -546,7 +598,11 @@ export default function App() {
                     >
                       <img
                         src={member.photo}
-                        alt={`${member.name} "${member.pka}", ${member.role}`}
+                        alt={
+                          member.pka
+                            ? `${member.name} "${member.pka}", ${member.role}`
+                            : `${member.name}, ${member.role}`
+                        }
                         className="absolute inset-0 w-full h-full"
                         style={{ objectFit: "cover" }}
                       />
@@ -560,9 +616,11 @@ export default function App() {
                     <p className="text-sm font-semibold" style={{ color: C.text }}>
                       {member.name}
                     </p>
-                    <p className="text-xs mt-0.5" style={{ color: C.textFaint, fontFamily: mono }}>
-                      "{member.pka}"
-                    </p>
+                    {member.pka && (
+                      <p className="text-xs mt-0.5" style={{ color: C.textFaint, fontFamily: mono }}>
+                        "{member.pka}"
+                      </p>
+                    )}
                   </div>
                 </Reveal>
               ))}
@@ -622,6 +680,22 @@ export default function App() {
               <div className="mt-8 flex items-center gap-2 text-sm" style={{ color: C.textFaint }}>
                 <MapPin size={15} />
                 <span>Ladoke Akintola University of Technology, Ogbomoso</span>
+              </div>
+
+              <div className="mt-10 grid gap-4">
+                {ACHIEVEMENTS.map((a, i) => {
+                  const Icon = a.icon;
+                  return (
+                    <Reveal key={i} delay={i * 90}>
+                      <div className="flex items-start gap-4 p-4" style={cardBase}>
+                        <Icon size={18} style={{ color: C.gold, marginTop: "2px", flexShrink: 0 }} />
+                        <p className="text-sm leading-relaxed" style={{ color: C.textDim }}>
+                          {a.body}
+                        </p>
+                      </div>
+                    </Reveal>
+                  );
+                })}
               </div>
             </Reveal>
           </div>
@@ -685,6 +759,43 @@ export default function App() {
                 ))}
               </div>
             </Reveal>
+          </div>
+        </section>
+
+        {/* ================= PHOTO SPEAKS ================= */}
+        <section className="px-6 py-20 md:py-24" style={{ borderTop: `1px solid ${C.lineSoft}` }}>
+          <div className="max-w-6xl mx-auto">
+            <Reveal className="max-w-2xl mb-10">
+              <span className="uppercase text-xs" style={{ color: C.gold, fontFamily: mono, letterSpacing: "0.2em" }}>
+                Gallery
+              </span>
+              <h2 className="text-3xl md:text-4xl mt-4" style={{ fontFamily: serif, fontWeight: 600 }}>
+                Photo speaks.
+              </h2>
+            </Reveal>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {GALLERY.map((g, i) => (
+                <Reveal key={g.photo} delay={(i % 4) * 80}>
+                  <div
+                    className="relative overflow-hidden"
+                    style={{
+                      aspectRatio: "4 / 5",
+                      borderRadius: "14px",
+                      border: `1px solid ${C.line}`,
+                    }}
+                  >
+                    <img
+                      src={g.photo}
+                      alt={g.alt}
+                      className="absolute inset-0 w-full h-full"
+                      style={{ objectFit: "cover" }}
+                      loading="lazy"
+                    />
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
 
