@@ -18,6 +18,7 @@ import {
   Users,
   Trophy,
   Flag,
+  Gift,
 } from "lucide-react";
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
@@ -31,16 +32,11 @@ import teamPro from "./assets/team-pro.jpg";
 import teamVp1 from "./assets/team-vp1.jpg";
 import teamVp2 from "./assets/team-vp2.jpg";
 import teamSocialDirector from "./assets/team-social-director.jpg";
-import gallery01 from "./assets/gallery/gallery-01.jpg";
-import gallery02 from "./assets/gallery/gallery-02.jpg";
-import gallery03 from "./assets/gallery/gallery-03.jpg";
-import gallery04 from "./assets/gallery/gallery-04.jpg";
-import gallery05 from "./assets/gallery/gallery-05.jpg";
-import gallery06 from "./assets/gallery/gallery-06.jpg";
-import gallery07 from "./assets/gallery/gallery-07.jpg";
-import gallery08 from "./assets/gallery/gallery-08.jpg";
 import FeedbackForm from "./components/FeedbackForm";
 import FeedbackList from "./components/FeedbackList";
+import Reveal from "./components/Reveal";
+import PhotoSpeaks from "./components/PhotoSpeaks";
+import CampaignGallery from "./components/CampaignGallery";
 import { C, serif, mono, sans, cardBase } from "./theme";
 
 /* ---------------------------------------------------------
@@ -53,6 +49,7 @@ import { C, serif, mono, sans, cardBase } from "./theme";
 --------------------------------------------------------- */
 
 const NAV_OFFSET = 88; // px — clears the sticky header when jumping to a section
+const WHATSAPP_CHANNEL = "https://whatsapp.com/channel/0029Vb8Gjgn0G0XYHLfyrV1n";
 
 const PILLARS = [
   {
@@ -162,17 +159,6 @@ const TEAM = [
   },
 ];
 
-const GALLERY = [
-  { photo: gallery01, alt: "Team LAUTECH holding the university banner at the NUGA games" },
-  { photo: gallery02, alt: "Team LAUTECH athletes in yellow jerseys with the university banner" },
-  { photo: gallery03, alt: "Team LAUTECH contingent gathered at the games venue" },
-  { photo: gallery04, alt: "Team LAUTECH athletes in yellow jerseys on the track" },
-  { photo: gallery05, alt: "Relay team with coach on the track at the NUGA games" },
-  { photo: gallery06, alt: "Team LAUTECH contingent with the university banner and sign" },
-  { photo: gallery07, alt: "Team LAUTECH athletes at the games stadium" },
-  { photo: gallery08, alt: "Team LAUTECH contingent posing at the stadium stands" },
-];
-
 const ACHIEVEMENTS = [
   {
     icon: Users,
@@ -226,46 +212,6 @@ const PROMISES = [
   "Run at least one free skill-acquisition bootcamp every semester.",
   "Bring back a proper sports and cultural calendar for all departments.",
 ];
-
-/* ---------- small scroll-reveal helper ---------- */
-function Reveal({ children, className = "", delay = 0, style = {} }) {
-  const ref = useRef(null);
-  const [shown, setShown] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            setShown(true);
-            io.disconnect();
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className={className}
-      style={{
-        transition: "opacity 700ms ease-out, transform 700ms ease-out",
-        transitionDelay: `${delay}ms`,
-        opacity: shown ? 1 : 0,
-        transform: shown ? "translateY(0)" : "translateY(24px)",
-        ...style,
-      }}
-    >
-      {children}
-    </div>
-  );
-}
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -760,42 +706,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* ================= PHOTO SPEAKS ================= */}
-        <section className="px-6 py-20 md:py-24" style={{ borderTop: `1px solid ${C.lineSoft}` }}>
-          <div className="max-w-6xl mx-auto">
-            <Reveal className="max-w-2xl mb-10">
-              <span className="uppercase text-xs" style={{ color: C.gold, fontFamily: mono, letterSpacing: "0.2em" }}>
-                Gallery
-              </span>
-              <h2 className="text-3xl md:text-4xl mt-4" style={{ fontFamily: serif, fontWeight: 600 }}>
-                Photo speaks.
-              </h2>
-            </Reveal>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {GALLERY.map((g, i) => (
-                <Reveal key={g.photo} delay={(i % 4) * 80}>
-                  <div
-                    className="relative overflow-hidden"
-                    style={{
-                      aspectRatio: "4 / 5",
-                      borderRadius: "14px",
-                      border: `1px solid ${C.line}`,
-                    }}
-                  >
-                    <img
-                      src={g.photo}
-                      alt={g.alt}
-                      className="absolute inset-0 w-full h-full"
-                      style={{ objectFit: "cover" }}
-                      loading="lazy"
-                    />
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
+        <PhotoSpeaks />
+        <CampaignGallery />
 
         {/* ================= AGENDA / PILLARS ================= */}
         <section
@@ -994,13 +906,24 @@ export default function App() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a
-                  href="mailto:famakinmubarak@gmail.com"
+                  href={WHATSAPP_CHANNEL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full font-semibold px-6 py-3.5 transition-colors"
                   style={{ background: C.gold, color: C.goldInk }}
                   onMouseEnter={(e) => (e.currentTarget.style.background = C.goldHover)}
                   onMouseLeave={(e) => (e.currentTarget.style.background = C.gold)}
                 >
-                  <Mail size={16} /> Email the campaign
+                  <Users size={16} /> Join the campaign
+                </a>
+                <a
+                  href={WHATSAPP_CHANNEL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full font-semibold px-6 py-3.5 transition-colors"
+                  style={{ background: C.coral, color: C.text }}
+                >
+                  <Gift size={16} /> Win giveaways
                 </a>
                 <a
                   href="#feedback"
