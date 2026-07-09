@@ -109,7 +109,7 @@ export default function FeedbackForm() {
                 Thanks — feedback received.
               </p>
               <p className="text-sm" style={{ color: C.textDim }}>
-                The New Dawn team will read it.
+                The STARS team will read it.
               </p>
               <button
                 type="button"

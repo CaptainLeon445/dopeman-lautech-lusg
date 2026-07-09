@@ -1,11 +1,11 @@
 {
-  "campaign": "New Dawn '26 — Famakin Mubaraq Olanrewaju \"DOPEMAN\" for LSUG President, LAUTECH",
+  "campaign": "STARS '26 — Famakin Mubaraq Olanrewaju \"DOPEMAN\" for LSUG President, LAUTECH",
   "instructions": "50 multiple-choice trivia questions for a giveaway/quiz to help voters retain key campaign facts. Each question has 4 options; \"answer\" gives the correct one.",
   "questions": [
     {
       "id": 1,
       "category": "Candidate Details",
-      "question": "What is the full name of the LSUG presidential candidate behind the New Dawn campaign?",
+      "question": "What is the full name of the LSUG presidential candidate behind the STARS campaign?",
       "options": ["Famakin Mubaraq Olanrewaju", "Afolabi Precious Enitan", "Lawalson Ayomide", "Oyetoro Nasrudeen Olamilekan"],
       "answer": "Famakin Mubaraq Olanrewaju"
     },
@@ -22,7 +22,7 @@
       "question": "What does the acronym \"DOPEMAN\" stand for?",
       "options": [
         "Driving Opportunities, People Empowerment, Mentorship and Network",
-        "Delivering Opportunities, Progress, Equity and New-dawn",
+        "Delivering Opportunities, Progress, Equity and Nationalism",
         "Dedicated Officer for Progress, Empowerment and National-development",
         "Development, Opportunity, Partnership, Equity and Networking"
       ],
@@ -88,8 +88,8 @@
       "id": 12,
       "category": "Team Title",
       "question": "What is the name of DOPEMAN's campaign?",
-      "options": ["New Dawn '26", "Fresh Start '26", "Rise & Shine '26", "Bright Future '26"],
-      "answer": "New Dawn '26"
+      "options": ["STARS '26", "Fresh Start '26", "Rise & Shine '26", "Bright Future '26"],
+      "answer": "STARS '26"
     },
     {
       "id": 13,
@@ -109,20 +109,20 @@
       "id": 15,
       "category": "Team Title",
       "question": "Which hashtag names the campaign itself?",
-      "options": ["#NewDawn", "#DopemanForPresident", "#Dawn26", "#VoteDopeman"],
-      "answer": "#NewDawn"
+      "options": ["#STARS26", "#DopemanForPresident", "#Dawn26", "#VoteDopeman"],
+      "answer": "#STARS26"
     },
     {
       "id": 16,
       "category": "Team Title",
-      "question": "Whose logo appears in the campaign site's header next to \"NEW DAWN\"?",
+      "question": "Whose logo appears in the campaign site's header next to \"STARS '26\"?",
       "options": ["LAUTECH's logo", "LSUG's logo", "FET's logo", "NUGA's logo"],
       "answer": "LAUTECH's logo"
     },
     {
       "id": 17,
       "category": "Team Title",
-      "question": "What year's LSUG election is the New Dawn campaign contesting?",
+      "question": "What year's LSUG election is the STARS campaign contesting?",
       "options": ["2026", "2025", "2027", "2024"],
       "answer": "2026"
     },
@@ -248,21 +248,21 @@
     {
       "id": 35,
       "category": "Mission",
-      "question": "Complete the campaign's hero headline: \"The new dawn ___\"",
-      "options": ["is here.", "has come.", "is near.", "is now."],
-      "answer": "is here."
+      "question": "Complete the campaign's hero headline: \"The STARS ___\"",
+      "options": ["have aligned.", "are rising.", "shine bright.", "lead the way."],
+      "answer": "have aligned."
     },
     {
       "id": 36,
       "category": "Mission",
       "question": "What is the campaign's rallying cry featured in the manifesto band?",
-      "options": ["Together we rise. Together we shine.", "Together we grow. Together we lead.", "One vision, one union.", "New dawn, new hope."],
+      "options": ["Together we rise. Together we shine.", "Together we grow. Together we lead.", "One vision, one union.", "Rise and align."],
       "answer": "Together we rise. Together we shine."
     },
     {
       "id": 37,
       "category": "Mission",
-      "question": "Complete: \"This is the New Dawn. This is the ___\"",
+      "question": "Complete: \"This is STARS. This is the ___\"",
       "options": ["LAUTECH Dream.", "Students' Dream.", "New Beginning.", "Real Change."],
       "answer": "LAUTECH Dream."
     },
@@ -276,14 +276,14 @@
     {
       "id": 39,
       "category": "Mission",
-      "question": "Complete the phrase describing who New Dawn's mission serves: \"for every student, every college, every ___\"",
+      "question": "Complete the phrase describing who STARS' mission serves: \"for every student, every college, every ___\"",
       "options": ["semester.", "session.", "election.", "year."],
       "answer": "semester."
     },
     {
       "id": 40,
       "category": "Contestants' Names & Positions",
-      "question": "Who is running as VP 1 (Vice President 1) on Team New Dawn?",
+      "question": "Who is running as VP 1 (Vice President 1) on Team STARS?",
       "options": ["Lawalson Ayomide (\"Smiling\")", "Ajibola Sobur Opeyemi", "Afolabi Precious Enitan (\"Zephyr\")", "Semiu Faruq Adeyemi (\"Ace\")"],
       "answer": "Lawalson Ayomide (\"Smiling\")"
     },
@@ -346,14 +346,14 @@
     {
       "id": 49,
       "category": "Contestants' Names & Positions",
-      "question": "Including DOPEMAN, how many aspirants make up the full New Dawn '26 ticket?",
+      "question": "Including DOPEMAN, how many aspirants make up the full STARS '26 ticket?",
       "options": ["10", "7", "8", "12"],
       "answer": "10"
     },
     {
       "id": 50,
       "category": "Contestants' Names & Positions",
-      "question": "Which role on Team New Dawn has no publicly listed nickname/alias?",
+      "question": "Which role on Team STARS has no publicly listed nickname/alias?",
       "options": ["Vice President 2 (Ajibola Sobur Opeyemi)", "VP 1 (Lawalson Ayomide)", "General Secretary (Afolabi Precious Enitan)", "PRO (Oyetoro Nasrudeen Olamilekan)"],
       "answer": "Vice President 2 (Ajibola Sobur Opeyemi)"
     }

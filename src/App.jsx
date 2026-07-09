@@ -37,7 +37,7 @@ import CampaignGallery from "./components/CampaignGallery";
 import { C, serif, mono, sans, cardBase } from "./theme";
 
 /* ---------------------------------------------------------
-   NEW DAWN — Campaign site for Famakin Mubaraq Olanrewaju
+   STARS '26 — Campaign site for Famakin Mubaraq Olanrewaju
    "DOPEMAN" — LSUG Presidential Aspirant, LAUTECH
 
    NOTE ON STYLING: custom colors, gradients and precise spacing
@@ -319,7 +319,7 @@ export default function App() {
               />
             </span>
             <span style={{ fontFamily: mono, letterSpacing: "0.05em", fontWeight: 600 }}>
-              NEW&nbsp;DAWN
+              STARS&nbsp;'26
             </span>
           </a>
 
@@ -423,7 +423,7 @@ export default function App() {
                 className="text-5xl md:text-6xl lg:text-7xl mb-6"
                 style={{ fontFamily: serif, fontWeight: 600, lineHeight: 1.02 }}
               >
-                The new dawn
+                The STARS
                 <span
                   className="block italic"
                   style={{
@@ -434,7 +434,7 @@ export default function App() {
                     color: "transparent",
                   }}
                 >
-                  is here.
+                  have aligned.
                 </span>
               </h1>
               <p className="text-lg leading-relaxed max-w-lg mb-4" style={{ color: C.textDim }}>
@@ -447,7 +447,7 @@ export default function App() {
                 , for President, LSUG '26.
               </p>
               <p className="text-sm mb-9" style={{ color: C.textFaint, fontFamily: mono }}>
-                #NewDawn · #LautechisDope · #LSUGElection2026
+                #STARS26 · #LautechisDope · #LSUGElection2026
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -619,7 +619,7 @@ export default function App() {
                 department, but for every student across the university:
                 Agriculture, Arts, Environmental Sciences, Engineering,
                 Management, and Pure & Applied Sciences alike. His campaign,
-                New Dawn, is built on one promise: a students' union shaped
+                STARS '26, is built on one promise: a students' union shaped
                 by the STARS agenda — Security, Transportation, Academics &
                 Welfare, Research & Innovation, and Sports — for every
                 student, every college, every semester.
@@ -668,7 +668,7 @@ export default function App() {
               className="text-sm uppercase"
               style={{ color: C.textFaint, fontFamily: mono, letterSpacing: "0.2em" }}
             >
-              This is the New Dawn. This is the LAUTECH Dream.
+              This is STARS. This is the LAUTECH Dream.
             </p>
           </Reveal>
         </section>
@@ -834,7 +834,7 @@ export default function App() {
           <div className="max-w-4xl mx-auto">
             <Reveal className="mb-12">
               <span className="uppercase text-xs" style={{ color: C.gold, fontFamily: mono, letterSpacing: "0.2em" }}>
-                The New Dawn contract
+                The STARS contract
               </span>
               <h2 className="text-3xl md:text-4xl mt-4 mb-4" style={{ fontFamily: serif, fontWeight: 600 }}>
                 What DOPEMAN is accountable for.
@@ -874,7 +874,7 @@ export default function App() {
                 Tell the campaign what you think.
               </h2>
               <p className="leading-relaxed" style={{ color: C.textDim }}>
-                Share your name, email, and a comment — the New Dawn team
+                Share your name, email, and a comment — the STARS team
                 reads every submission.
               </p>
             </Reveal>
@@ -901,7 +901,7 @@ export default function App() {
           <div className="max-w-3xl mx-auto text-center relative">
             <Reveal>
               <h2 className="text-3xl md:text-5xl mb-5" style={{ fontFamily: serif, fontWeight: 600 }}>
-                LAUTECH's new dawn starts with your vote.
+                LAUTECH's STARS align with your vote.
               </h2>
               <p className="mb-9 max-w-xl mx-auto" style={{ color: C.textDim }}>
                 Join the campaign, share the agenda with your department, or
@@ -945,7 +945,7 @@ export default function App() {
       <footer className="px-6 py-12 relative" style={{ borderTop: `1px solid ${C.line}`, zIndex: 1 }}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <p style={{ fontFamily: mono, fontWeight: 600, letterSpacing: "0.05em" }}>NEW DAWN · DOPEMAN '26</p>
+            <p style={{ fontFamily: mono, fontWeight: 600, letterSpacing: "0.05em" }}>STARS '26 · DOPEMAN</p>
             <p className="text-sm mt-1" style={{ color: C.textFaint }}>
               Famakin Mubaraq Olanrewaju "DOPEMAN" for President, LSUG '26 ·
               Ladoke Akintola University of Technology
@@ -956,7 +956,7 @@ export default function App() {
           </div>
         </div>
         <p className="max-w-6xl mx-auto text-xs mt-8" style={{ color: "#5C6B8A" }}>
-          Courtesy: Faculty of Engineering Movement — #NewDawn #LautechisDope
+          Courtesy: Faculty of Engineering Movement — #STARS26 #LautechisDope
           #LSUGElection2026
         </p>
       </footer>
