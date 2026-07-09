@@ -19,338 +19,343 @@
     {
       "id": 3,
       "category": "Candidate Details",
+      "question": "What does the acronym \"DOPEMAN\" stand for?",
+      "options": [
+        "Driving Opportunities, People Empowerment, Mentorship and Network",
+        "Delivering Opportunities, Progress, Equity and New-dawn",
+        "Dedicated Officer for Progress, Empowerment and National-development",
+        "Development, Opportunity, Partnership, Equity and Networking"
+      ],
+      "answer": "Driving Opportunities, People Empowerment, Mentorship and Network"
+    },
+    {
+      "id": 4,
+      "category": "Candidate Details",
       "question": "What course is DOPEMAN studying?",
       "options": ["Mechanical Engineering", "Civil Engineering", "Computer Engineering", "Agricultural Engineering"],
       "answer": "Mechanical Engineering"
     },
     {
-      "id": 4,
+      "id": 5,
       "category": "Candidate Details",
       "question": "DOPEMAN is a student of which university?",
       "options": ["LAUTECH", "University of Ibadan", "Obafemi Awolowo University", "University of Ilorin"],
       "answer": "LAUTECH"
     },
     {
-      "id": 5,
+      "id": 6,
       "category": "Candidate Details",
       "question": "Which position is DOPEMAN contesting for?",
       "options": ["LSUG President", "LSUG Vice President", "Faculty President", "Hall Chairman"],
       "answer": "LSUG President"
     },
     {
-      "id": 6,
+      "id": 7,
       "category": "Candidate Details",
       "question": "In which town is LAUTECH located?",
       "options": ["Ogbomoso", "Oyo", "Ibadan", "Osogbo"],
       "answer": "Ogbomoso"
     },
     {
-      "id": 7,
+      "id": 8,
       "category": "Candidate Details",
       "question": "What leadership role did DOPEMAN hold for his class, FET28?",
       "options": ["Faculty Representative", "Class Governor", "Course Rep", "Hall Chairman"],
       "answer": "Faculty Representative"
     },
     {
-      "id": 8,
+      "id": 9,
       "category": "Candidate Details",
       "question": "At which event did DOPEMAN win medals and a trophy for the Mechanical Engineering department?",
       "options": ["The LAUTECH Olympics", "NUGA", "Inter-Hall Games", "Engineering Week"],
       "answer": "The LAUTECH Olympics"
     },
     {
-      "id": 9,
+      "id": 10,
       "category": "Candidate Details",
       "question": "DOPEMAN represented LAUTECH at which national sports competition?",
       "options": ["NUGA (Nigeria University Games)", "WAUG", "CHOSEA Games", "National Sports Festival"],
       "answer": "NUGA (Nigeria University Games)"
     },
     {
-      "id": 10,
+      "id": 11,
       "category": "Candidate Details",
       "question": "Which edition of NUGA did DOPEMAN represent LAUTECH at, and where was it held?",
       "options": ["27th edition, at UNIJOS", "26th edition, at UNILAG", "28th edition, at ABU", "25th edition, at UI"],
       "answer": "27th edition, at UNIJOS"
     },
     {
-      "id": 11,
+      "id": 12,
       "category": "Team Title",
       "question": "What is the name of DOPEMAN's campaign?",
       "options": ["New Dawn '26", "Fresh Start '26", "Rise & Shine '26", "Bright Future '26"],
       "answer": "New Dawn '26"
     },
     {
-      "id": 12,
+      "id": 13,
       "category": "Team Title",
-      "question": "How many letters make up the \"NEW DAWN\" agenda acronym?",
-      "options": ["7", "5", "6", "8"],
-      "answer": "7"
+      "question": "How many letters make up the STARS agenda acronym?",
+      "options": ["5", "7", "6", "4"],
+      "answer": "5"
     },
     {
-      "id": 13,
+      "id": 14,
       "category": "Team Title",
       "question": "Which hashtag celebrates LAUTECH pride in the campaign's messaging?",
       "options": ["#LautechisDope", "#LautechRises", "#LautechForward", "#LautechStrong"],
       "answer": "#LautechisDope"
     },
     {
-      "id": 14,
+      "id": 15,
       "category": "Team Title",
       "question": "Which hashtag names the campaign itself?",
       "options": ["#NewDawn", "#DopemanForPresident", "#Dawn26", "#VoteDopeman"],
       "answer": "#NewDawn"
     },
     {
-      "id": 15,
+      "id": 16,
       "category": "Team Title",
       "question": "Whose logo appears in the campaign site's header next to \"NEW DAWN\"?",
       "options": ["LAUTECH's logo", "LSUG's logo", "FET's logo", "NUGA's logo"],
       "answer": "LAUTECH's logo"
     },
     {
-      "id": 16,
+      "id": 17,
       "category": "Team Title",
       "question": "What year's LSUG election is the New Dawn campaign contesting?",
       "options": ["2026", "2025", "2027", "2024"],
       "answer": "2026"
     },
     {
-      "id": 17,
-      "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the first \"N\" stand for?",
-      "options": ["Networked Academics", "New Campus Culture", "Nationwide Advocacy", "Nurturing Athletes"],
-      "answer": "Networked Academics"
-    },
-    {
       "id": 18,
       "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the \"E\" stand for?",
-      "options": ["Every Faculty's Welfare", "Engineering Excellence", "Empowering Elections", "Environmental Ethics"],
-      "answer": "Every Faculty's Welfare"
+      "question": "In the STARS agenda, what does the \"S\" (first letter) stand for?",
+      "options": ["Security", "Sports", "Scholarships", "Student welfare"],
+      "answer": "Security"
     },
     {
       "id": 19,
       "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the first \"W\" stand for?",
-      "options": ["Welfare & Transportation", "Workforce & Innovation", "Water & Wellness", "Winning Ways"],
-      "answer": "Welfare & Transportation"
+      "question": "In the STARS agenda, what does the \"T\" stand for?",
+      "options": ["Transportation", "Technology", "Town-halls", "Training"],
+      "answer": "Transportation"
     },
     {
       "id": 20,
       "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the \"D\" stand for?",
-      "options": ["Digital Transparency", "Democratic Development", "Dependable Delivery", "Diverse Departments"],
-      "answer": "Digital Transparency"
+      "question": "In the STARS agenda, what does the \"A\" stand for?",
+      "options": ["Academics, Welfarism & Environment", "A Secure Campus", "Athletics & Wellness", "Alumni & Welfare"],
+      "answer": "Academics, Welfarism & Environment"
     },
     {
       "id": 21,
       "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the \"A\" stand for?",
-      "options": ["A Secure Campus", "Academic Advancement", "Affordable Accommodation", "Active Alumni"],
-      "answer": "A Secure Campus"
+      "question": "In the STARS agenda, what does the \"R\" stand for?",
+      "options": ["Research & Innovation", "Reliable Transport", "Renovation & Repairs", "Representation Rights"],
+      "answer": "Research & Innovation"
     },
     {
       "id": 22,
       "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the second \"W\" stand for?",
-      "options": ["Workforce & Innovation", "Welfare & Transportation", "Wellness & Water", "Winning Culture"],
-      "answer": "Workforce & Innovation"
+      "question": "In the STARS agenda, what does the second \"S\" (last letter) stand for?",
+      "options": ["Sports", "Security", "Scholarships", "Student Council"],
+      "answer": "Sports"
     },
     {
       "id": 23,
       "category": "Agenda",
-      "question": "In the NEW DAWN agenda, what does the second \"N\" stand for?",
-      "options": ["New Campus Culture", "Networked Academics", "National Recognition", "New Student Council"],
-      "answer": "New Campus Culture"
+      "question": "Under Security, what kind of patrols does DOPEMAN promise on campus?",
+      "options": ["Monthly vigilante patrols", "Daily army patrols", "Weekly police raids", "Student-only night watch"],
+      "answer": "Monthly vigilante patrols"
     },
     {
       "id": 24,
       "category": "Agenda",
-      "question": "Which New Dawn promise is about accountability for LSUG's finances?",
-      "options": ["Publish every kobo of LSUG income and spending, every semester.", "Reduce LSUG dues by half.", "Give every student a stipend.", "Build a new LSUG secretariat."],
-      "answer": "Publish every kobo of LSUG income and spending, every semester."
+      "question": "How many shuttles does DOPEMAN promise to provide at regulated prices under Transportation?",
+      "options": ["50–100", "10–20", "200–300", "5–10"],
+      "answer": "50–100"
     },
     {
       "id": 25,
       "category": "Agenda",
-      "question": "Which New Dawn promise ensures students are consulted before new costs are added?",
-      "options": ["Hold a town-hall before any new levy or fee is proposed.", "Freeze all levies indefinitely.", "Let course reps set fees.", "Abolish all LSUG fees."],
-      "answer": "Hold a town-hall before any new levy or fee is proposed."
+      "question": "Which transport union does DOPEMAN promise to partner with for campus shuttles?",
+      "options": ["NURTW", "FRSC", "VIO", "NARTO"],
+      "answer": "NURTW"
     },
     {
       "id": 26,
       "category": "Agenda",
-      "question": "Which New Dawn promise addresses equipment across colleges?",
-      "options": ["Fight for functional lab, studio, and workshop equipment in every college.", "Buy new buses for every college.", "Build a new library.", "Give every college a generator."],
-      "answer": "Fight for functional lab, studio, and workshop equipment in every college."
+      "question": "Within how many days does DOPEMAN promise to renovate lecture halls under Academics, Welfarism & Environment?",
+      "options": ["100 days", "30 days", "6 months", "1 year"],
+      "answer": "100 days"
     },
     {
       "id": 27,
       "category": "Agenda",
-      "question": "Which New Dawn promise addresses harassment and welfare complaints?",
-      "options": ["Set up a real, confidential harassment and welfare report line.", "Create a students' court.", "Hire more security guards.", "Start a peer counseling club."],
-      "answer": "Set up a real, confidential harassment and welfare report line."
+      "question": "Which loan scheme does DOPEMAN promise to ensure is disbursed on time?",
+      "options": ["NELFUND", "Tetfund", "Student Loan Board", "Education Bank"],
+      "answer": "NELFUND"
     },
     {
       "id": 28,
       "category": "Agenda",
-      "question": "Which New Dawn promise targets hostel conditions?",
-      "options": ["Push for a fixed water and light maintenance schedule in every hostel.", "Build new hostels for every college.", "Make hostels free for all.", "Privatize hostel management."],
-      "answer": "Push for a fixed water and light maintenance schedule in every hostel."
+      "question": "Which competition does DOPEMAN promise full support for under Research & Innovation?",
+      "options": ["HULT Prize", "Falling Walls Lab", "Google Solution Challenge", "NASA Space Apps"],
+      "answer": "HULT Prize"
     },
     {
       "id": 29,
       "category": "Agenda",
-      "question": "Which New Dawn promise is about skills training?",
-      "options": ["Run at least one free skill-acquisition bootcamp every semester.", "Make internships compulsory.", "Pay students to attend classes.", "Cancel all exams."],
-      "answer": "Run at least one free skill-acquisition bootcamp every semester."
+      "question": "Which national competition does DOPEMAN promise guaranteed LAUTECH participation in under Sports?",
+      "options": ["NUGA", "WAUG", "CHOSEA Games", "National Sports Festival"],
+      "answer": "NUGA"
     },
     {
       "id": 30,
-      "category": "Agenda",
-      "question": "Which New Dawn promise is about campus culture and recreation?",
-      "options": ["Bring back a proper sports and cultural calendar for all departments.", "Build a new stadium.", "End all inter-hall competitions.", "Make sports compulsory for graduation."],
-      "answer": "Bring back a proper sports and cultural calendar for all departments."
-    },
-    {
-      "id": 31,
       "category": "Agenda",
       "question": "What is the flagship project planned for DOPEMAN's first 100 days in office?",
       "options": ["LSUG Budget Dashboard", "Hostel & Water Task Force", "Cross-Faculty Skills Bootcamp", "Report Line"],
       "answer": "LSUG Budget Dashboard"
     },
     {
-      "id": 32,
+      "id": 31,
       "category": "Agenda",
       "question": "Which flagship project pairs hall reps with the works department to fix hostel complaints?",
       "options": ["Hostel & Water Task Force", "LSUG Budget Dashboard", "Cross-Faculty Skills Bootcamp", "Report Line"],
       "answer": "Hostel & Water Task Force"
     },
     {
-      "id": 33,
+      "id": 32,
       "category": "Agenda",
       "question": "Which flagship project offers weekend technical-skill sessions open to every college?",
       "options": ["Cross-Faculty Skills Bootcamp", "LSUG Budget Dashboard", "Hostel & Water Task Force", "Report Line"],
       "answer": "Cross-Faculty Skills Bootcamp"
     },
     {
-      "id": 34,
+      "id": 33,
       "category": "Agenda",
       "question": "Which flagship project is a confidential channel for harassment and welfare complaints?",
       "options": ["Report Line", "LSUG Budget Dashboard", "Hostel & Water Task Force", "Cross-Faculty Skills Bootcamp"],
       "answer": "Report Line"
     },
     {
-      "id": 35,
+      "id": 34,
       "category": "Mission",
       "question": "Complete DOPEMAN's mission quote: \"This is the vision. This is the mission. This is the movement — together we rise, ___\"",
       "options": ["together we shine.", "together we grow.", "together we win.", "together we build."],
       "answer": "together we shine."
     },
     {
-      "id": 36,
+      "id": 35,
       "category": "Mission",
       "question": "Complete the campaign's hero headline: \"The new dawn ___\"",
       "options": ["is here.", "has come.", "is near.", "is now."],
       "answer": "is here."
     },
     {
-      "id": 37,
+      "id": 36,
       "category": "Mission",
       "question": "What is the campaign's rallying cry featured in the manifesto band?",
       "options": ["Together we rise. Together we shine.", "Together we grow. Together we lead.", "One vision, one union.", "New dawn, new hope."],
       "answer": "Together we rise. Together we shine."
     },
     {
-      "id": 38,
+      "id": 37,
       "category": "Mission",
       "question": "Complete: \"This is the New Dawn. This is the ___\"",
       "options": ["LAUTECH Dream.", "Students' Dream.", "New Beginning.", "Real Change."],
       "answer": "LAUTECH Dream."
     },
     {
-      "id": 39,
+      "id": 38,
       "category": "Mission",
-      "question": "Which of these is NOT one of the six things listed in DOPEMAN's opening promise on the site?",
-      "options": ["Free tuition", "A secure campus", "Improved welfare", "Sporting success"],
+      "question": "Which of these is NOT one of the five STARS themes named in DOPEMAN's opening hero line?",
+      "options": ["Free tuition", "Security", "Sports", "Research & Innovation"],
       "answer": "Free tuition"
     },
     {
-      "id": 40,
+      "id": 39,
       "category": "Mission",
       "question": "Complete the phrase describing who New Dawn's mission serves: \"for every student, every college, every ___\"",
       "options": ["semester.", "session.", "election.", "year."],
       "answer": "semester."
     },
     {
-      "id": 41,
+      "id": 40,
       "category": "Contestants' Names & Positions",
       "question": "Who is running as VP 1 (Vice President 1) on Team New Dawn?",
       "options": ["Lawalson Ayomide (\"Smiling\")", "Ajibola Sobur Opeyemi", "Afolabi Precious Enitan (\"Zephyr\")", "Semiu Faruq Adeyemi (\"Ace\")"],
       "answer": "Lawalson Ayomide (\"Smiling\")"
     },
     {
-      "id": 42,
+      "id": 41,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for Vice President 2?",
       "options": ["Ajibola Sobur Opeyemi", "Lawalson Ayomide", "Isola Jesutosin Oluwaseyi", "Mikail Abdulsemiu Ayomide"],
       "answer": "Ajibola Sobur Opeyemi"
     },
     {
-      "id": 43,
+      "id": 42,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for General Secretary, alias \"Zephyr\"?",
       "options": ["Afolabi Precious Enitan", "Omotosho Okikijesu", "Isola Jesutosin Oluwaseyi", "Oyetoro Nasrudeen Olamilekan"],
       "answer": "Afolabi Precious Enitan"
     },
     {
-      "id": 44,
+      "id": 43,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for Assistant General Secretary, alias \"Olasunmbo\"?",
       "options": ["Omotosho Okikijesu", "Afolabi Precious Enitan", "Adesokan Abdul Rahman Afolabi", "Semiu Faruq Adeyemi"],
       "answer": "Omotosho Okikijesu"
     },
     {
-      "id": 45,
+      "id": 44,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for Financial Secretary, alias \"Sheyman\"?",
       "options": ["Isola Jesutosin Oluwaseyi", "Mikail Abdulsemiu Ayomide", "Ajibola Sobur Opeyemi", "Oyetoro Nasrudeen Olamilekan"],
       "answer": "Isola Jesutosin Oluwaseyi"
     },
     {
-      "id": 46,
+      "id": 45,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for Welfare Director, alias \"Jaunty Jnr\"?",
       "options": ["Adesokan Abdul Rahman Afolabi", "Mikail Abdulsemiu Ayomide", "Lawalson Ayomide", "Omotosho Okikijesu"],
       "answer": "Adesokan Abdul Rahman Afolabi"
     },
     {
-      "id": 47,
+      "id": 46,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for Sport Director, alias \"Folounsho\"?",
       "options": ["Mikail Abdulsemiu Ayomide", "Oyetoro Nasrudeen Olamilekan", "Adesokan Abdul Rahman Afolabi", "Semiu Faruq Adeyemi"],
       "answer": "Mikail Abdulsemiu Ayomide"
     },
     {
-      "id": 48,
+      "id": 47,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for PRO (Public Relations Officer), alias \"Eniola\"?",
       "options": ["Oyetoro Nasrudeen Olamilekan", "Isola Jesutosin Oluwaseyi", "Ajibola Sobur Opeyemi", "Afolabi Precious Enitan"],
       "answer": "Oyetoro Nasrudeen Olamilekan"
     },
     {
-      "id": 49,
+      "id": 48,
       "category": "Contestants' Names & Positions",
       "question": "Who is running for Social Director, alias \"Ace\"?",
       "options": ["Semiu Faruq Adeyemi", "Lawalson Ayomide", "Mikail Abdulsemiu Ayomide", "Omotosho Okikijesu"],
       "answer": "Semiu Faruq Adeyemi"
     },
     {
-      "id": 50,
+      "id": 49,
       "category": "Contestants' Names & Positions",
       "question": "Including DOPEMAN, how many aspirants make up the full New Dawn '26 ticket?",
       "options": ["10", "7", "8", "12"],
       "answer": "10"
+    },
+    {
+      "id": 50,
+      "category": "Contestants' Names & Positions",
+      "question": "Which role on Team New Dawn has no publicly listed nickname/alias?",
+      "options": ["Vice President 2 (Ajibola Sobur Opeyemi)", "VP 1 (Lawalson Ayomide)", "General Secretary (Afolabi Precious Enitan)", "PRO (Oyetoro Nasrudeen Olamilekan)"],
+      "answer": "Vice President 2 (Ajibola Sobur Opeyemi)"
     }
   ]
 }

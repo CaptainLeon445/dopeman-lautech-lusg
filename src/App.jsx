@@ -1,12 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import {
   Compass,
-  Wrench,
-  Home as HomeIcon,
-  BarChart3,
   ShieldCheck,
-  Briefcase,
-  PartyPopper,
+  Bus,
+  Lightbulb,
   Mail,
   MessageCircle,
   ArrowRight,
@@ -53,53 +50,39 @@ const WHATSAPP_CHANNEL = "https://whatsapp.com/channel/0029Vb8Gjgn0G0XYHLfyrV1n"
 
 const PILLARS = [
   {
-    letter: "N",
-    title: "Networked Academics",
-    icon: GraduationCap,
+    letter: "S",
+    title: "Security",
+    icon: ShieldCheck,
     body:
-      "A course-rep support portal, a shared bank of past questions and tutorial notes, and organised revision clinics before exams.",
+      "Weekly engagement with security agencies, monthly vigilante patrols, and permanent security posts inside campus — no student should live in fear of theft or burglary.",
   },
   {
-    letter: "E",
-    title: "Every Faculty's Welfare",
-    icon: Wrench,
+    letter: "T",
+    title: "Transportation",
+    icon: Bus,
     body:
-      "Advocacy for working lab and studio equipment, practicum and SIWES support, and faster faculty response — from Agriculture to Engineering, Environmental Sciences to Management, Pure & Applied Sciences to the Arts.",
-  },
-  {
-    letter: "W",
-    title: "Welfare & Transportation",
-    icon: HomeIcon,
-    body:
-      "Fairer hostel allocation, affordable and reliable campus transport fares, steady water supply, and a health centre that actually opens on time.",
-  },
-  {
-    letter: "D",
-    title: "Digital Transparency",
-    icon: BarChart3,
-    body:
-      "A public dashboard for LSUG income and spending, and open town-halls before any decision that affects students' pockets.",
+      "Partnering with NURTW and private transport bodies for 50–100 shuttles at regulated prices, safe off-semester travel arrangements, and fair-fare engagement with road transport workers.",
   },
   {
     letter: "A",
-    title: "A Secure Campus",
-    icon: ShieldCheck,
+    title: "Academics, Welfarism & Environment",
+    icon: GraduationCap,
     body:
-      "A working anti-harassment reporting line, a student legal-aid desk, and consistent pressure for better campus lighting and security patrols.",
+      "Renovated lecture halls within the first 100 days, Amphitheatre use to ease overcrowding, monthly faculty-dean engagement, permanent fixes for CBT exam issues, timely NELFUND loan disbursement, scholarships for indigent and disabled students, and working toilets, reliable water, and proper waste management across campus.",
   },
   {
-    letter: "W",
-    title: "Workforce & Innovation",
-    icon: Briefcase,
+    letter: "R",
+    title: "Research & Innovation",
+    icon: Lightbulb,
     body:
-      "Skill bootcamps tailored by field — CAD and SolidWorks for Engineering, agribusiness for Agriculture, GIS for Environmental Sciences, financial modelling for Management — plus a shared innovation and startup hub for every student's ideas.",
+      "A dedicated committee to manage competition partnerships, full support for the HULT Prize, and access to innovation-driven programs that prepare students for the future — building LAUTECH into a hub of creativity.",
   },
   {
-    letter: "N",
-    title: "New Campus Culture",
-    icon: PartyPopper,
+    letter: "S",
+    title: "Sports",
+    icon: Trophy,
     body:
-      "A revived sports calendar, real inter-department competitions, and a mental health support line students can trust.",
+      "Guaranteed LAUTECH participation in NUGA, improved sports infrastructure, and structured support for our teams — putting LAUTECH on the national map.",
   },
 ];
 
@@ -204,13 +187,11 @@ const PROJECTS = [
 ];
 
 const PROMISES = [
-  "Publish every kobo of LSUG income and spending, every semester.",
-  "Hold a town-hall before any new levy or fee is proposed.",
-  "Fight for functional lab, studio, and workshop equipment in every college — Agriculture, Engineering, Environmental Sciences, and beyond.",
-  "Set up a real, confidential harassment and welfare report line.",
-  "Push for a fixed water and light maintenance schedule in every hostel.",
-  "Run at least one free skill-acquisition bootcamp every semester.",
-  "Bring back a proper sports and cultural calendar for all departments.",
+  "Security that protects — no student will live in fear of theft or burglary.",
+  "Transport that connects — affordable, safe, and reliable transport for every student.",
+  "Academics, welfare and environment that empower — no student will be left behind.",
+  "Research and innovation that inspire — LAUTECH as a hub of creativity and innovation.",
+  "Sports that unite and elevate — our athletes shining on the national map.",
 ];
 
 export default function App() {
@@ -457,9 +438,9 @@ export default function App() {
                 </span>
               </h1>
               <p className="text-lg leading-relaxed max-w-lg mb-4" style={{ color: C.textDim }}>
-                A secure campus. Affordable transportation. Improved welfare.
-                Academic excellence. Innovation. Sporting success. This is
-                the vision, the mission, and the movement behind{" "}
+                Security. Transportation. Academics, Welfarism & Environment.
+                Research & Innovation. Sports. This is the STARS agenda — the
+                vision, the mission, and the movement behind{" "}
                 <span style={{ color: C.text, fontWeight: 700 }}>
                   Famakin Mubaraq Olanrewaju — "DOPEMAN"
                 </span>
@@ -631,16 +612,17 @@ export default function App() {
               </blockquote>
               <p className="leading-relaxed" style={{ color: C.textDim }}>
                 Famakin Mubaraq Olanrewaju, known across campus as{" "}
-                <span style={{ color: C.text, fontWeight: 700 }}>DOPEMAN</span>,
-                is a student of Mechanical Engineering at Ladoke Akintola
-                University of Technology — running not for one department,
-                but for every student across the university: Agriculture,
-                Arts, Environmental Sciences, Engineering, Management, and
-                Pure & Applied Sciences alike. His campaign, New Dawn, is
-                built on one promise: a students' union that delivers a
-                secure campus, affordable transportation, improved welfare,
-                academic excellence, innovation, and sporting success — for
-                every student, every college, every semester.
+                <span style={{ color: C.text, fontWeight: 700 }}>DOPEMAN</span>{" "}
+                — Driving Opportunities, People Empowerment, Mentorship and
+                Network — is a student of Mechanical Engineering at Ladoke
+                Akintola University of Technology — running not for one
+                department, but for every student across the university:
+                Agriculture, Arts, Environmental Sciences, Engineering,
+                Management, and Pure & Applied Sciences alike. His campaign,
+                New Dawn, is built on one promise: a students' union shaped
+                by the STARS agenda — Security, Transportation, Academics &
+                Welfare, Research & Innovation, and Sports — for every
+                student, every college, every semester.
               </p>
               <div className="mt-8 flex items-center gap-2 text-sm" style={{ color: C.textFaint }}>
                 <MapPin size={15} />
@@ -745,15 +727,15 @@ export default function App() {
               <div className="flex items-center gap-2 mb-4" style={{ color: C.gold }}>
                 <Sunrise size={18} />
                 <span className="uppercase text-xs" style={{ fontFamily: mono, letterSpacing: "0.2em" }}>
-                  The agenda
+                  The STARS agenda
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl mb-4" style={{ fontFamily: serif, fontWeight: 600 }}>
-                Seven letters. One mandate.
+                Five letters. One mandate.
               </h2>
               <p className="leading-relaxed" style={{ color: C.textDim }}>
-                NEW DAWN 26 isn't a slogan — every letter is a working area
-                the union will be held to, from day one of the term.
+                STARS isn't a slogan — every letter is a working area the
+                union will be held to, from day one of the term.
               </p>
             </Reveal>
 
@@ -852,14 +834,14 @@ export default function App() {
           <div className="max-w-4xl mx-auto">
             <Reveal className="mb-12">
               <span className="uppercase text-xs" style={{ color: C.gold, fontFamily: mono, letterSpacing: "0.2em" }}>
-                The promises
+                The New Dawn contract
               </span>
               <h2 className="text-3xl md:text-4xl mt-4 mb-4" style={{ fontFamily: serif, fontWeight: 600 }}>
                 What DOPEMAN is accountable for.
               </h2>
               <p className="leading-relaxed max-w-2xl" style={{ color: C.textDim }}>
-                Short, specific, and checkable at the end of every semester —
-                on purpose.
+                Five pledges, one for each letter of STARS — checkable at the
+                end of every semester, on purpose.
               </p>
             </Reveal>
 
